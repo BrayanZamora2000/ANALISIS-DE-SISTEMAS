@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  width: 300px;
+  background-color: #000;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.login-title {
+  color: #0f0;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  color: #0f0;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: #0f0;
+}
+
+.login-button {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: #0f0;
+  color: #000;
+  cursor: pointer;
+}
+
+.mensaje {
+  color: #f00;
+  text-align: center;
+}

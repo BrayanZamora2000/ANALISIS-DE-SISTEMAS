@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #00ff00;
+}
+
+.table th,
+.table td {
+  border: 1px solid #00ff00;
+  padding: 8px;
+}
+
+.editing {
+  background-color: #00ff00;
+}
+
+input[type="text"] {
+  border: none;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+button {
+  background-color: #00ff00;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+}

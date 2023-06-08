@@ -1,0 +1,34 @@
+<div class="container">
+    <h2>Personas</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID Identificación</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Fecha de Nacimiento</th>
+          <th>Lugar de Nacimiento</th>
+          <th>Título de Persona</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let persona of personas">
+          <td><input type="text" [(ngModel)]="persona.idIdentificacion"></td>
+          <td><input type="text" [(ngModel)]="persona.nombre"></td>
+          <td><input type="text" [(ngModel)]="persona.apellido"></td>
+          <td><input type="text" [(ngModel)]="persona.fechaNacimiento"></td>
+          <td><input type="text" [(ngModel)]="persona.lugarNacimiento"></td>
+          <td><input type="text" [(ngModel)]="persona.tituloPersona"></td>
+          <td>
+            <!-- Botones para editar o guardar cambios -->
+            <button class="btn-editar" (click)="editarPersona(persona)">Editar</button>
+            <button class="btn-eliminar" (click)="eliminarPersona(persona)">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br/>
+    <button class="btn-asignar" (click)="asignarVuelos()">Asignar vuelos</button>
+  </div>
+  

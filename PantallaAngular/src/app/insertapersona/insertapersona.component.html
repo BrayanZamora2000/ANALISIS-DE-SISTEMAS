@@ -1,0 +1,32 @@
+<div class="container">
+    <h2 class="title">Insertar Persona</h2>
+    <form (submit)="guardarPersona()">
+        <div class="form-row">
+            <label for="idIdentificacion">ID Identificación:</label>
+            <input type="text" id="idIdentificacion" name="idIdentificacion" [(ngModel)]="nuevaPersona.idIdentificacion" required>
+        </div>
+        <div class="form-row">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" [(ngModel)]="nuevaPersona.nombre" required>
+        </div>
+        <div class="form-row">
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" [(ngModel)]="nuevaPersona.apellido" required>
+        </div>
+        <div class="form-row">
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="text" id="fechaNacimiento" name="fechaNacimiento" [(ngModel)]="nuevaPersona.fechaNacimiento" required>
+        </div>
+        <div class="form-row">
+            <label for="lugarNacimiento">Lugar de Nacimiento:</label>
+            <input type="text" id="lugarNacimiento" name="lugarNacimiento" [(ngModel)]="nuevaPersona.lugarNacimiento" required>
+        </div>
+        <div class="form-row">
+            <label for="tituloPersona">Título de Persona:</label>
+            <input type="text" id="tituloPersona" name="tituloPersona" [(ngModel)]="nuevaPersona.tituloPersona" required>
+        </div>
+        <div class="form-row">
+            <button class="btn-insertar" type="submit">Insertar</button>
+        </div>
+    </form>
+</div>
